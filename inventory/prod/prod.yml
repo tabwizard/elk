@@ -9,8 +9,7 @@ all:
       ansible_host: 178.154.194.1
   vars:
     ansible_connection: ssh
-    ansible_user: jenkins
-    ansible_ssh_private_key_file: ~/.ssh/id_rsa
+    ansible_user: wizard
 elasticsearch:
   hosts:
     el-instance:
