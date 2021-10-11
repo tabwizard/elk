@@ -9,9 +9,8 @@ all:
       ansible_host: 62.84.123.119
   vars:
     ansible_connection: ssh
-    ansible_port: 22
-    ansible_user: wizard
-    ansible_ssh_private_key_file: /home/wizard/.ssh/id_rsa
+    ansible_user: jenkins
+    ansible_ssh_private_key_file: ~/.ssh/id_rsa
 elasticsearch:
   hosts:
     el-instance:
