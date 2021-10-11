@@ -2,11 +2,11 @@
 all:
   hosts:
     el-instance:
-      ansible_host: 178.154.193.149
+      ansible_host: 62.84.121.108
     k-instance:
-      ansible_host: 178.154.197.120
+      ansible_host: 130.193.41.101
     app-instance:
-      ansible_host: 84.252.143.138
+      ansible_host: 62.84.123.119
   vars:
     ansible_connection: ssh
     ansible_port: 22
