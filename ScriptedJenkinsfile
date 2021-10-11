@@ -1,0 +1,13 @@
+node("linux"){
+    stage("Git checkout"){
+        git branch: 'main', credentialsId: 'wizard', url: 'git@github.com:tabwizard/elk.git'
+    }
+    stage("Run playbook"){
+        if (params.prod_run){
+            ansiblePlaybook become: true, becomeUser: 'root', colorized: true, credentialsId: 'wizard', disableHostKeyChecking: true, inventory: 'inventory/prod/prod.yml', playbook: 'site.yml'
+        }
+        else{
+            ansiblePlaybook become: true, becomeUser: 'root', colorized: true, credentialsId: 'wizard', disableHostKeyChecking: true, extras: '--check --diff', inventory: 'inventory/prod/prod.yml', playbook: 'site.yml'
+        }
+    }
+} 
