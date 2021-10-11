@@ -1,0 +1,22 @@
+---
+all:
+  hosts:
+    el-instance:
+      ansible_host: 178.154.193.149
+    k-instance:
+      ansible_host: 178.154.197.120
+    app-instance:
+      ansible_host: 84.252.143.138
+  vars:
+    ansible_connection: ssh
+    ansible_port: 22
+    ansible_user: wizard
+elasticsearch:
+  hosts:
+    el-instance:
+kibana:
+  hosts:
+    k-instance:
+application:
+  hosts:
+    app-instance:
