@@ -2,7 +2,7 @@
 all:
   hosts:
     el-instance:
-      ansible_host: 62.84.121.108
+      ansible_host: 178.154.194.78
     k-instance:
       ansible_host: 130.193.41.101
     app-instance:
