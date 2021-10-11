@@ -2,11 +2,11 @@
 all:
   hosts:
     el-instance:
-      ansible_host: 178.154.194.78
+      ansible_host: 62.84.123.240
     k-instance:
-      ansible_host: 178.154.197.43
+      ansible_host: 84.252.143.161
     app-instance:
-      ansible_host: 178.154.194.1
+      ansible_host: 62.84.123.105
   vars:
     ansible_connection: ssh
     ansible_user: wizard
