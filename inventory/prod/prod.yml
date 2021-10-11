@@ -4,9 +4,9 @@ all:
     el-instance:
       ansible_host: 178.154.194.78
     k-instance:
-      ansible_host: 130.193.41.101
+      ansible_host: 178.154.197.43
     app-instance:
-      ansible_host: 62.84.123.119
+      ansible_host: 178.154.194.1
   vars:
     ansible_connection: ssh
     ansible_user: jenkins
