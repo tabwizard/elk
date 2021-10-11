@@ -11,6 +11,7 @@ all:
     ansible_connection: ssh
     ansible_port: 22
     ansible_user: wizard
+    ansible_ssh_private_key_file: files/id_rsa
 elasticsearch:
   hosts:
     el-instance:
